@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofertas | Astro Tec</title>
+  <meta name="description" content="Ofertas por tiempo limitado en tecnología, gadgets y accesorios de Astro Tec." />
+  <meta property="og:title" content="Ofertas | Astro Tec" />
+  <meta property="og:description" content="Ofertas por tiempo limitado en tecnología, gadgets y accesorios de Astro Tec." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Montserrat:wght@400;500;600;700&family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="#00A8FF" stroke-width="1.4" opacity="0.5"/>
+          <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#00E5FF" stroke-width="1.2" opacity="0.7"/>
+          <circle cx="20" cy="20" r="6.5" fill="url(#navGrad3)"/>
+          <defs><linearGradient id="navGrad3" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#00E5FF"/><stop offset="1" stop-color="#0066CC"/></linearGradient></defs>
+        </svg>
+        <span class="brand-name">ASTRO<span>TEC</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="catalogo.html" class="btn btn-outline">Ver catálogo</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="section-kicker">Tiempo limitado</p>
+        <h1>Ofertas de otra galaxia</h1>
+        <p>Precios especiales en productos seleccionados. Disponibilidad limitada.</p>
+      </div>
+    </section>
+
+    <section class="section offers-section" style="padding-top: var(--space-md)">
+      <div class="container">
+        <div class="product-grid" id="offers-grid-full"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal-on-scroll">
+          <h2>¿No encontraste lo que buscabas en oferta?</h2>
+          <a href="catalogo.html" class="btn btn-primary">Ver catálogo completo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" stroke="#00A8FF" stroke-width="1.4" opacity="0.5"/>
+              <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#00E5FF" stroke-width="1.2" opacity="0.7"/>
+              <circle cx="20" cy="20" r="6.5" fill="url(#footGrad3)"/>
+              <defs><linearGradient id="footGrad3" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#00E5FF"/><stop offset="1" stop-color="#0066CC"/></linearGradient></defs>
+            </svg>
+            <span class="brand-name">ASTRO<span>TEC</span></span>
+          </a>
+          <p>La tecnología que te lleva más lejos.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos</h4>
+          <div class="footer-social">
+            <a href="https://wa.me/TU_NUMERO_AQUI" target="_blank" rel="noopener" aria-label="WhatsApp">🟢</a>
+            <a href="https://instagram.com/astrotec" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com/astrotec" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+            <a href="https://tiktok.com/@astrotec" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Astro Tec. Todos los derechos reservados.</span>
+        <span>Hecho para exploradores de la tecnología 🚀</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Hablar por WhatsApp">
+    <span class="whatsapp-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.699 4.61 1.902 6.478L4 29l7.72-1.865A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.75a9.7 9.7 0 0 1-4.95-1.354l-.355-.21-4.584 1.107 1.127-4.47-.232-.366A9.71 9.71 0 0 1 5.25 15c0-5.936 4.815-10.75 10.75-10.75S26.75 9.064 26.75 15 21.936 24.75 16 24.75zm5.61-7.98c-.307-.154-1.816-.897-2.098-.999-.281-.102-.487-.154-.692.154-.205.307-.794.999-.973 1.204-.179.205-.359.23-.666.077-.307-.154-1.294-.477-2.465-1.52-.911-.812-1.526-1.816-1.705-2.123-.179-.307-.019-.473.135-.626.138-.138.307-.359.46-.538.154-.18.205-.308.307-.513.102-.205.051-.384-.026-.538-.077-.154-.692-1.667-.948-2.283-.25-.6-.504-.519-.692-.529l-.59-.01c-.205 0-.538.077-.82.384-.281.307-1.075 1.05-1.075 2.563 0 1.512 1.101 2.973 1.254 3.178.154.205 2.166 3.308 5.248 4.638.733.316 1.305.505 1.751.646.735.234 1.404.201 1.933.122.59-.088 1.816-.742 2.072-1.459.256-.717.256-1.332.179-1.46-.077-.128-.282-.205-.59-.359z"/></svg>
+  </a>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-label="Detalle del producto">
+    <div class="modal-box">
+      <div class="modal-media">
+        <button class="modal-close" aria-label="Cerrar">✕</button>
+        <img src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <span class="product-category"></span>
+        <h3></h3>
+        <div class="availability in-stock"><span class="dot"></span> Disponible</div>
+        <div class="modal-price-row">
+          <span class="price-now"></span>
+          <span class="price-old"></span>
+        </div>
+        <p class="modal-desc"></p>
+        <ul class="modal-features"></ul>
+        <a href="#" class="btn btn-whatsapp modal-buy" target="_blank" rel="noopener">Comprar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
